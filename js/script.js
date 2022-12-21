@@ -14,6 +14,10 @@ function createCard(){
     card.setAttribute('class', 'card');
     return card
 }
+function createImage(){
+    const image = document.createElement('img');
+    return image;
+}
 function createName(){
     const name = document.createElement('h3');
     return name;
@@ -21,10 +25,6 @@ function createName(){
 function createRole(){
     const role = document.createElement('p');
     return role;
-}
-function createImage(){
-    const image = document.createElement('img');
-    return image;
 }
 
 //Stampo in console
@@ -39,18 +39,18 @@ for (let key in info){
 
 //Creo elementi
 for (i = 0; i < 6; i++){
-    const card = createCard(i)
-    const title = createName(i)
-    const role = createRole(i)
-    const image = createImage(i)
+    const card = createCard(i);
+    const image = createImage(i);
+    const title = createName(i);
+    const role = createRole(i);
 
-    title.innerText=info.name[i]
-    role.innerText=info.role[i]
-    image.innerText=info.image[i]
+    image.src = "./img/" + info.image[i];
+    title.innerText = info.name[i];
+    role.innerText = info.role[i];
     pagina.appendChild(card);
+    card.appendChild(image);
     card.appendChild(title);
     card.appendChild(role);
-    card.appendChild(image);
 }
 
 
