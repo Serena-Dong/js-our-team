@@ -13,7 +13,8 @@ body{
 
 /* #CARDS */
 .container{
-    max-width: 1200px;
+    margin: auto;
+    width: 70%;
 }
 
 .row{
@@ -38,13 +39,14 @@ body{
 }
 
 .titles{
-    height: 15%;
+    margin-top: 0.3rem;
     font-size: 0.8rem;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
 }
+
 
 img{
     width: 100%;
