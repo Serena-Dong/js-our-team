@@ -1,0 +1,51 @@
+/* #ESSENTIALS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+    color: rgba(0, 0, 0, 0.691);
+    text-align: center;
+}
+/* #CARDS */
+.container{
+    max-width: 1200px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30vh;
+    height: 40vh;
+    margin: 1rem;
+    background-color: white;
+}
+
+/* #ADJUSTMENTS */
+.title-card > *{
+    width: 600px;
+    margin:2rem;
+    line-height: 2rem;
+}
+
+
+.titles{
+    height: 15%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+img{
+    width: 100%;
+}
