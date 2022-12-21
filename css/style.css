@@ -10,6 +10,7 @@ body{
     color: rgba(0, 0, 0, 0.691);
     text-align: center;
 }
+
 /* #CARDS */
 .container{
     max-width: 1200px;
@@ -35,7 +36,6 @@ body{
     line-height: 2rem;
 }
 
-
 .titles{
     height: 15%;
     font-size: 0.8rem;
@@ -44,7 +44,6 @@ body{
     text-align: center;
     flex-direction: column;
 }
-
 
 img{
     width: 100%;
