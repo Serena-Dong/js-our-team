@@ -1,5 +1,5 @@
 //ELEMENTI dal DOM
-const pagina = document.getElementById('target');
+const pagina = document.getElementById('main-row');
 
 // DATI
 const info = {
@@ -9,26 +9,21 @@ const info = {
 }
 //FUNZIONI
 function createCard(){
+    
     const card = document.createElement('div');
     card.setAttribute('class', 'card');
     return card
 }
 function createImage(){
     const image = document.createElement('img');
-    image.setAttribute('class', 'img');
-
     return image;
 }
 function createName(){
     const name = document.createElement('h3');
-    name.setAttribute('class', 'titles');
-
     return name;
 }
 function createRole(){
     const role = document.createElement('p');
-    role.setAttribute('class', 'titles');
-
     return role;
 }
 
@@ -44,18 +39,14 @@ for (let key in info){
 
 //Creo elementi
 for (i = 0; i < 6; i++){
-
     const card = createCard(i);
     const image = createImage(i);
     const title = createName(i);
     const role = createRole(i);
 
-    //ASSEGNO I DATI
     image.src = "./img/" + info.image[i];
     title.innerText = info.name[i];
     role.innerText = info.role[i];
-
-    //APPENDO IN PAGINA
     pagina.appendChild(card);
     card.appendChild(image);
     card.appendChild(title);
@@ -64,6 +55,7 @@ for (i = 0; i < 6; i++){
 
 
 
+//STAMPO IN PAGINA
 /*
 MILESTONE 0:
 Creare l’array di oggetti con le informazioni fornite.
