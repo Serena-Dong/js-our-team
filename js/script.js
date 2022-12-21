@@ -40,7 +40,7 @@ for (let key in info){
 }
 
 //Creo elementi
-for (i = 0; i < 6; i++){
+for (i = 0; i < info.name.length; i++){
 
     const card = createCard(i);
     const image = createImage(i);
